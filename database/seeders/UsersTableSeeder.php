@@ -21,8 +21,8 @@ class UsersTableSeeder extends Seeder
         for ($i = 1; $i <= 10; $i++){
             $users [] = [
                 'name' => $faker->name,
-                'user_role' => $faker->randomElement($array = array('admin', 'customer')),
                 'email' => $faker-> email,
+                'user_role' => $faker->randomElement($array = array('admin', 'customer')),
                 'email_verified_at' => $faker->dateTime(),
                 'password' => $faker -> password
             ];
